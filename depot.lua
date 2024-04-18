@@ -7,7 +7,7 @@ local function enableFeatures()
     -- Enable the gamepasses that start with "2xD" or "2xC"
     local gamepasses = game:GetService("Players").LocalPlayer:WaitForChild("Info"):WaitForChild("Gamepasses"):GetChildren()
     for _, gamepass in ipairs(gamepasses) do
-        if string.sub(gamepass.Name, 1, 3) == "DOUBLE D" or string.sub(gamepass.Name, 1, 3) == "DOUBLE C" then
+        if string.sub(gamepass.Name, 1, 3) == "Double D" or string.sub(gamepass.Name, 1, 3) == "Double C" then
             gamepass.Value = true
         elseif gamepass.Name == "auto" then
             gamepass.Value = true
