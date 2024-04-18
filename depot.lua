@@ -32,7 +32,7 @@ local function enableFeatures()
 
     -- Function to periodically update crate positions
     local function updateCratePositions()
-        while wait(15) do
+        while wait(0) do
             for i,p in pairs(game.Workspace:GetChildren()) do
                 if p.Name == "Crate" then
                     p.CanCollide = false
